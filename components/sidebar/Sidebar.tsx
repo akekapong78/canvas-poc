@@ -1,7 +1,7 @@
-import Image from 'next/image';
 import { Box, Flex, Text, VStack } from '@chakra-ui/react';
 import StageItemCard from './StageItem';
 import { stageItems } from '@/lib/stageItems';
+import { assetPath } from '@/lib/asset-path';
 
 const navItems = [
   { label: 'Home', icon: '/icons/home.svg' },
@@ -31,7 +31,7 @@ export default function Sidebar() {
     >
       {/* Logo */}
       <Flex align="center" px="16px" py="14px" borderBottom="1px solid #F0F3F9">
-        <Image src="/carbonform-logo.svg" alt="Carbonform" width={130} height={28} style={{ objectFit: 'contain' }} />
+        <img src={assetPath('/carbonform-logo.svg')} alt="Carbonform" width={130} height={28} style={{ objectFit: 'contain' }} />
       </Flex>
 
       {/* Main nav */}
@@ -51,7 +51,7 @@ export default function Sidebar() {
             <Box w="16px" h="16px" flexShrink={0} display="flex" alignItems="center" justifyContent="center"
               style={{ filter: item.active ? 'brightness(0) invert(1)' : 'none' }}
             >
-              <Image src={item.icon} alt={item.label} width={16} height={16} />
+              <img src={assetPath(item.icon)} alt={item.label} width={16} height={16} />
             </Box>
             <Text
               fontSize="13px"
@@ -125,7 +125,7 @@ export default function Sidebar() {
             _hover={{ bg: '#F3F8FD' }}
           >
             <Box w="16px" h="16px" flexShrink={0} display="flex" alignItems="center" justifyContent="center">
-              <Image src={item.icon} alt={item.label} width={16} height={16} />
+              <img src={assetPath(item.icon)} alt={item.label} width={16} height={16} />
             </Box>
             <Text fontSize="13px" color="#373E4A">{item.label}</Text>
           </Flex>
