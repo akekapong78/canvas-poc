@@ -63,7 +63,7 @@ export default function FlowCanvas({ initialNodes, initialEdges }: FlowCanvasPro
         id: crypto.randomUUID(),
         type: stageType,
         position,
-        data: defaultNodeData[stageType] ?? { label: stageType, subtitle: 'New Stage' },
+        data: { ...(defaultNodeData[stageType] ?? { label: stageType, subtitle: 'New Stage' }) },
       };
 
       setNodes((prev) => [...prev, newNode]);
