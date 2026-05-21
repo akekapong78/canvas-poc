@@ -1,19 +1,16 @@
 import type { Metadata } from 'next';
+import { Provider } from '@/components/ui/provider';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'ReactFlow Demo',
+  title: 'Carbon Form — Lifecycle Builder',
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body>
-        <main>{children}</main>
+        <Provider>{children}</Provider>
       </body>
     </html>
   );
