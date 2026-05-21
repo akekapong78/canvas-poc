@@ -14,10 +14,10 @@ export default function ProductionNode({ data, selected }: NodeProps<ProductionN
     <Box
       bg="white"
       border="2px solid"
-      borderColor={selected ? '#1e3a8a' : '#e2e8f0'}
+      borderColor={selected ? '#164C9A' : '#E2E7EE'}
       borderRadius="12px"
       w="220px"
-      boxShadow={selected ? '0 0 0 3px #bfdbfe' : 'sm'}
+      boxShadow={selected ? '0 0 0 3px #B9D3F9' : 'sm'}
       overflow="hidden"
     >
       {/* Header */}
@@ -25,7 +25,7 @@ export default function ProductionNode({ data, selected }: NodeProps<ProductionN
         <Box
           w="32px"
           h="32px"
-          bg="#eff6ff"
+          bg="#E2F1FF"
           borderRadius="8px"
           display="flex"
           alignItems="center"
@@ -35,30 +35,30 @@ export default function ProductionNode({ data, selected }: NodeProps<ProductionN
           🏭
         </Box>
         <Box flex={1}>
-          <Text fontWeight="700" fontSize="13px" color="#111827" lineHeight="1.2">
+          <Text fontWeight="700" fontSize="13px" color="#1E252F" lineHeight="1.2">
             {data.label}
           </Text>
-          <Text fontSize="10px" color="#6b7280" lineHeight="1.2">
+          <Text fontSize="10px" color="#647081" lineHeight="1.2">
             {data.subtitle}
           </Text>
         </Box>
-        <Text fontSize="12px" color="#9ca3af" cursor="pointer">×</Text>
+        <Text fontSize="12px" color="#929CAA" cursor="pointer">×</Text>
       </Flex>
 
       {/* Load metric */}
-      <Box borderTop="1px solid #f3f4f6" px="12px" py="10px">
+      <Box borderTop="1px solid #F0F3F9" px="12px" py="10px">
         <Flex align="center" justify="space-between" mb="6px">
-          <Text fontSize="10px" color="#6b7280" fontWeight="600" letterSpacing="0.05em">
+          <Text fontSize="10px" color="#647081" fontWeight="600" letterSpacing="0.05em">
             LOAD METRIC
           </Text>
-          <Text fontSize="11px" fontWeight="700" color="#111827">
+          <Text fontSize="11px" fontWeight="700" color="#1E252F">
             {data.loadMetric}%
           </Text>
         </Flex>
         {/* Progress bar */}
-        <Box bg="#e5e7eb" borderRadius="full" h="6px" overflow="hidden">
+        <Box bg="#E2E7EE" borderRadius="full" h="6px" overflow="hidden">
           <Box
-            bg="#1a56db"
+            bg="#2162C5"
             h="100%"
             borderRadius="full"
             style={{ width: `${data.loadMetric}%` }}
@@ -66,8 +66,8 @@ export default function ProductionNode({ data, selected }: NodeProps<ProductionN
         </Box>
       </Box>
 
-      <Handle type="target" position={Position.Left} style={{ background: '#1a56db' }} />
-      <Handle type="source" position={Position.Right} style={{ background: '#1a56db' }} />
+      <Handle type="target" position={Position.Left} style={{ background: '#2162C5' }} />
+      <Handle type="source" position={Position.Right} style={{ background: '#2162C5' }} />
     </Box>
   );
 }

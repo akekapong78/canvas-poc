@@ -1,20 +1,21 @@
+import Image from 'next/image';
 import { Box, Flex, Text, VStack } from '@chakra-ui/react';
 import StageItemCard from './StageItem';
 import { stageItems } from '@/lib/stageItems';
 
 const navItems = [
-  { label: 'Home', icon: '🏠' },
-  { label: 'Dashboard', icon: '📊' },
-  { label: 'Inventory', icon: '☰' },
-  { label: 'Life Cycle', icon: '♻️', active: true },
-  { label: 'Reduction Target', icon: '📈' },
-  { label: 'Supply Chain', icon: '🔗' },
-  { label: 'Reports', icon: '📄' },
+  { label: 'Home', icon: '/icons/home.svg' },
+  { label: 'Dashboard', icon: '/icons/bar-chart.svg' },
+  { label: 'Inventory', icon: '/icons/list.svg' },
+  { label: 'Life Cycle', icon: '/icons/layers.svg', active: true },
+  { label: 'Reduction Target', icon: '/icons/reduce-arrow.svg' },
+  { label: 'Supply Chain', icon: '/icons/switch-arrow.svg' },
+  { label: 'Reports', icon: '/icons/report.svg' },
 ];
 
 const bottomNavItems = [
-  { label: 'Support', icon: '💬' },
-  { label: 'Settings', icon: '⚙️' },
+  { label: 'Support', icon: '/icons/featured-icon.svg' },
+  { label: 'Settings', icon: '/icons/dot.svg' },
 ];
 
 export default function Sidebar() {
@@ -25,29 +26,12 @@ export default function Sidebar() {
       minW="240px"
       h="100%"
       bg="white"
-      borderRight="1px solid #e5e7eb"
+      borderRight="1px solid #E2E7EE"
       overflow="hidden"
     >
       {/* Logo */}
-      <Flex align="center" gap="8px" px="16px" py="14px" borderBottom="1px solid #f3f4f6">
-        <Box
-          w="28px"
-          h="28px"
-          bg="#1a56db"
-          borderRadius="6px"
-          display="flex"
-          alignItems="center"
-          justifyContent="center"
-          color="white"
-          fontSize="14px"
-          fontWeight="700"
-        >
-          C
-        </Box>
-        <Box>
-          <Text fontSize="12px" fontWeight="700" color="#111827" lineHeight="1">carbon</Text>
-          <Text fontSize="12px" fontWeight="700" color="#111827" lineHeight="1">form</Text>
-        </Box>
+      <Flex align="center" px="16px" py="14px" borderBottom="1px solid #F0F3F9">
+        <Image src="/carbonform-logo.svg" alt="Carbonform" width={130} height={28} style={{ objectFit: 'contain' }} />
       </Flex>
 
       {/* Main nav */}
@@ -60,15 +44,19 @@ export default function Sidebar() {
             px="10px"
             py="8px"
             borderRadius="6px"
-            bg={item.active ? '#1a56db' : 'transparent'}
+            bg={item.active ? '#2162C5' : 'transparent'}
             cursor="pointer"
-            _hover={{ bg: item.active ? '#1e40af' : '#f9fafb' }}
+            _hover={{ bg: item.active ? '#164C9A' : '#F3F8FD' }}
           >
-            <Text fontSize="14px">{item.icon}</Text>
+            <Box w="16px" h="16px" flexShrink={0} display="flex" alignItems="center" justifyContent="center"
+              style={{ filter: item.active ? 'brightness(0) invert(1)' : 'none' }}
+            >
+              <Image src={item.icon} alt={item.label} width={16} height={16} />
+            </Box>
             <Text
               fontSize="13px"
               fontWeight={item.active ? '600' : '400'}
-              color={item.active ? 'white' : '#374151'}
+              color={item.active ? 'white' : '#373E4A'}
             >
               {item.label}
             </Text>
@@ -77,11 +65,11 @@ export default function Sidebar() {
       </VStack>
 
       {/* Lifecycle Stages panel */}
-      <Box px="12px" py="10px" borderTop="1px solid #f3f4f6" flex={1} overflow="auto">
-        <Text fontSize="10px" fontWeight="700" color="#374151" letterSpacing="0.08em" mb="4px">
+      <Box px="12px" py="10px" borderTop="1px solid #F0F3F9" flex={1} overflow="auto">
+        <Text fontSize="10px" fontWeight="700" color="#373E4A" letterSpacing="0.08em" mb="4px">
           LIFECYCLE STAGES
         </Text>
-        <Text fontSize="10px" color="#9ca3af" mb="10px">DRAG TO CANVAS</Text>
+        <Text fontSize="10px" color="#929CAA" mb="10px">DRAG TO CANVAS</Text>
         <VStack gap="8px" align="stretch">
           {stageItems.map((item) => (
             <StageItemCard key={item.type} item={item} isSelected={item.type === 'production'} />
@@ -89,8 +77,8 @@ export default function Sidebar() {
         </VStack>
 
         {/* Multi-output */}
-        <Box mt="16px" pt="12px" borderTop="1px solid #f3f4f6">
-          <Text fontSize="10px" fontWeight="700" color="#374151" letterSpacing="0.08em" mb="8px">
+        <Box mt="16px" pt="12px" borderTop="1px solid #F0F3F9">
+          <Text fontSize="10px" fontWeight="700" color="#373E4A" letterSpacing="0.08em" mb="8px">
             MULTI-OUTPUT
           </Text>
           <VStack gap="6px" align="stretch">
@@ -101,30 +89,30 @@ export default function Sidebar() {
                 justify="space-between"
                 px="10px"
                 py="7px"
-                border="1px dashed #d1d5db"
+                border="1px dashed #D2D8DF"
                 borderRadius="6px"
                 cursor="pointer"
               >
-                <Text fontSize="10px" color="#6b7280" fontWeight="600" letterSpacing="0.04em">
+                <Text fontSize="10px" color="#647081" fontWeight="600" letterSpacing="0.04em">
                   {label}
                 </Text>
-                <Text fontSize="12px" color="#9ca3af">↗</Text>
+                <Text fontSize="12px" color="#929CAA">↗</Text>
               </Flex>
             ))}
           </VStack>
         </Box>
 
         {/* Expert tip */}
-        <Box mt="16px" p="10px" bg="#eff6ff" borderRadius="8px" border="1px solid #bfdbfe">
-          <Text fontSize="10px" fontWeight="700" color="#1a56db" mb="4px">📍 EXPERT TIP</Text>
-          <Text fontSize="10px" color="#374151" lineHeight="1.5">
+        <Box mt="16px" p="10px" bg="#E2F1FF" borderRadius="8px" border="1px solid #B9D3F9">
+          <Text fontSize="10px" fontWeight="700" color="#2162C5" mb="4px">📍 EXPERT TIP</Text>
+          <Text fontSize="10px" color="#373E4A" lineHeight="1.5">
             Connect nodes by dragging from output ports (right) to input ports (left) to define carbon transfer flows.
           </Text>
         </Box>
       </Box>
 
       {/* Bottom nav */}
-      <VStack gap="2px" align="stretch" px="8px" py="8px" borderTop="1px solid #f3f4f6">
+      <VStack gap="2px" align="stretch" px="8px" py="8px" borderTop="1px solid #F0F3F9">
         {bottomNavItems.map((item) => (
           <Flex
             key={item.label}
@@ -134,10 +122,12 @@ export default function Sidebar() {
             py="8px"
             borderRadius="6px"
             cursor="pointer"
-            _hover={{ bg: '#f9fafb' }}
+            _hover={{ bg: '#F3F8FD' }}
           >
-            <Text fontSize="14px">{item.icon}</Text>
-            <Text fontSize="13px" color="#374151">{item.label}</Text>
+            <Box w="16px" h="16px" flexShrink={0} display="flex" alignItems="center" justifyContent="center">
+              <Image src={item.icon} alt={item.label} width={16} height={16} />
+            </Box>
+            <Text fontSize="13px" color="#373E4A">{item.label}</Text>
           </Flex>
         ))}
       </VStack>

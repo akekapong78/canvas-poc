@@ -15,7 +15,7 @@ export default function PackagingNode({ data, selected }: NodeProps<PackagingNod
     <Box
       bg="white"
       border="1.5px solid"
-      borderColor={selected ? '#1a56db' : '#e2e8f0'}
+      borderColor={selected ? '#2162C5' : '#E2E7EE'}
       borderRadius="12px"
       w="200px"
       boxShadow="sm"
@@ -26,7 +26,7 @@ export default function PackagingNode({ data, selected }: NodeProps<PackagingNod
         <Box
           w="32px"
           h="32px"
-          bg="#eff6ff"
+          bg="#E2F1FF"
           borderRadius="8px"
           display="flex"
           alignItems="center"
@@ -36,39 +36,39 @@ export default function PackagingNode({ data, selected }: NodeProps<PackagingNod
           📦
         </Box>
         <Box flex={1}>
-          <Text fontWeight="700" fontSize="13px" color="#111827" lineHeight="1.2">
+          <Text fontWeight="700" fontSize="13px" color="#1E252F" lineHeight="1.2">
             {data.label}
           </Text>
-          <Text fontSize="10px" color="#6b7280" lineHeight="1.2">
+          <Text fontSize="10px" color="#647081" lineHeight="1.2">
             {data.subtitle}
           </Text>
         </Box>
-        <Text fontSize="12px" color="#9ca3af" cursor="pointer">×</Text>
+        <Text fontSize="12px" color="#929CAA" cursor="pointer">×</Text>
       </Flex>
 
       {/* Stats */}
-      <Box borderTop="1px solid #f3f4f6" px="12px" py="8px">
+      <Box borderTop="1px solid #F0F3F9" px="12px" py="8px">
         <Flex gap="16px">
           <Box>
-            <Text fontSize="9px" color="#6b7280" fontWeight="600" letterSpacing="0.05em" mb="2px">
+            <Text fontSize="9px" color="#647081" fontWeight="600" letterSpacing="0.05em" mb="2px">
               UNITS
             </Text>
-            <Text fontSize="13px" fontWeight="700" color="#111827">
+            <Text fontSize="13px" fontWeight="700" color="#1E252F">
               {data.units.toLocaleString()}
             </Text>
           </Box>
           <Box>
-            <Text fontSize="9px" color="#6b7280" fontWeight="600" letterSpacing="0.05em" mb="2px">
+            <Text fontSize="9px" color="#647081" fontWeight="600" letterSpacing="0.05em" mb="2px">
               KG CO2E
             </Text>
-            <Text fontSize="13px" fontWeight="700" color="#111827">
+            <Text fontSize="13px" fontWeight="700" color="#1E252F">
               {data.kgCo2e}
             </Text>
           </Box>
         </Flex>
       </Box>
 
-      <Handle type="target" position={Position.Left} style={{ background: '#1a56db' }} />
+      <Handle type="target" position={Position.Left} style={{ background: '#2162C5' }} />
     </Box>
   );
 }

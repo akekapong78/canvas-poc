@@ -9,13 +9,13 @@ export default function TopBar() {
       align="center"
       px="20px"
       h="52px"
-      borderBottom="1px solid #e5e7eb"
+      borderBottom="1px solid #E2E7EE"
       bg="white"
       gap="24px"
       flexShrink={0}
     >
       {/* Project title */}
-      <Text fontSize="14px" fontWeight="700" color="#1a56db" whiteSpace="nowrap">
+      <Text fontSize="14px" fontWeight="700" color="#2162C5" whiteSpace="nowrap">
         Project: Carbon Lifecycle #D41243
       </Text>
 
@@ -24,11 +24,11 @@ export default function TopBar() {
         {tabs.map((tab) => {
           const isActive = tab === activeTab;
           return (
-            <Box key={tab} pb="2px" borderBottom={isActive ? '2px solid #1a56db' : '2px solid transparent'}>
+            <Box key={tab} pb="2px" borderBottom={isActive ? '2px solid #2162C5' : '2px solid transparent'}>
               <Text
                 fontSize="13px"
                 fontWeight={isActive ? '600' : '400'}
-                color={isActive ? '#1a56db' : '#6b7280'}
+                color={isActive ? '#2162C5' : '#647081'}
                 cursor="pointer"
               >
                 {tab}
@@ -43,13 +43,13 @@ export default function TopBar() {
 
       {/* Right actions */}
       <Flex align="center" gap="12px">
-        <Text fontSize="18px" color="#6b7280" cursor="pointer">🕐</Text>
-        <Text fontSize="18px" color="#6b7280" cursor="pointer">🗺️</Text>
-        <Box w="1px" h="20px" bg="#e5e7eb" />
-        <Text fontSize="13px" color="#374151" cursor="pointer">Undo</Text>
+        <Text fontSize="18px" color="#647081" cursor="pointer">🕐</Text>
+        <Text fontSize="18px" color="#647081" cursor="pointer">🗺️</Text>
+        <Box w="1px" h="20px" bg="#E2E7EE" />
+        <Text fontSize="13px" color="#373E4A" cursor="pointer">Undo</Text>
         <Box
           as="button"
-          bg="#1a56db"
+          bg="#2162C5"
           color="white"
           borderRadius="8px"
           px="16px"
@@ -58,7 +58,7 @@ export default function TopBar() {
           fontWeight="600"
           cursor="pointer"
           border="none"
-          _hover={{ bg: '#1e40af' }}
+          _hover={{ bg: '#164C9A' }}
         >
           Export Report
         </Box>
@@ -66,7 +66,7 @@ export default function TopBar() {
           w="32px"
           h="32px"
           borderRadius="full"
-          bg="#374151"
+          bg="#373E4A"
           overflow="hidden"
           display="flex"
           alignItems="center"

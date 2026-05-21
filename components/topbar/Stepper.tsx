@@ -16,7 +16,7 @@ export default function Stepper() {
       justify="center"
       gap="0"
       py="12px"
-      borderBottom="1px solid #e5e7eb"
+      borderBottom="1px solid #E2E7EE"
       bg="white"
     >
       {steps.map((step, index) => {
@@ -31,7 +31,7 @@ export default function Stepper() {
                 w="24px"
                 h="24px"
                 borderRadius="full"
-                bg={isActive ? '#1a56db' : isPast ? '#1a56db' : '#e5e7eb'}
+                bg={isActive ? '#2162C5' : isPast ? '#2162C5' : '#E2E7EE'}
                 display="flex"
                 alignItems="center"
                 justifyContent="center"
@@ -40,7 +40,7 @@ export default function Stepper() {
                 <Text
                   fontSize="11px"
                   fontWeight="700"
-                  color={isActive || isPast ? 'white' : '#9ca3af'}
+                  color={isActive || isPast ? 'white' : '#929CAA'}
                 >
                   {step.id}
                 </Text>
@@ -48,7 +48,7 @@ export default function Stepper() {
               <Text
                 fontSize="11px"
                 fontWeight={isActive ? '700' : '500'}
-                color={isActive ? '#1a56db' : isPast ? '#6b7280' : '#9ca3af'}
+                color={isActive ? '#2162C5' : isPast ? '#647081' : '#929CAA'}
                 letterSpacing="0.06em"
               >
                 {step.label}
@@ -57,7 +57,7 @@ export default function Stepper() {
 
             {/* Connector line */}
             {index < steps.length - 1 && (
-              <Box w="60px" h="1px" bg="#e5e7eb" mx="4px" />
+              <Box w="60px" h="1px" bg="#E2E7EE" mx="4px" />
             )}
           </Flex>
         );

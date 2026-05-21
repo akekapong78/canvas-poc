@@ -19,7 +19,7 @@ export default function CanvasToolbar() {
       {/* Zoom controls */}
       <Flex
         bg="white"
-        border="1px solid #e5e7eb"
+        border="1px solid #E2E7EE"
         borderRadius="8px"
         align="center"
         overflow="hidden"
@@ -30,16 +30,16 @@ export default function CanvasToolbar() {
           px="10px"
           py="6px"
           fontSize="16px"
-          color="#374151"
+          color="#373E4A"
           cursor="pointer"
-          _hover={{ bg: '#f9fafb' }}
+          _hover={{ bg: '#F3F8FD' }}
           onClick={() => zoomOut()}
           border="none"
           bg="transparent"
         >
           −
         </Box>
-        <Text fontSize="12px" fontWeight="600" color="#374151" px="4px" minW="44px" textAlign="center">
+        <Text fontSize="12px" fontWeight="600" color="#373E4A" px="4px" minW="44px" textAlign="center">
           250%
         </Text>
         <Box
@@ -47,9 +47,9 @@ export default function CanvasToolbar() {
           px="10px"
           py="6px"
           fontSize="16px"
-          color="#374151"
+          color="#373E4A"
           cursor="pointer"
-          _hover={{ bg: '#f9fafb' }}
+          _hover={{ bg: '#F3F8FD' }}
           onClick={() => zoomIn()}
           border="none"
           bg="transparent"
@@ -62,16 +62,16 @@ export default function CanvasToolbar() {
       <Box
         as="button"
         bg="white"
-        border="1px solid #e5e7eb"
+        border="1px solid #E2E7EE"
         borderRadius="8px"
         px="12px"
         py="6px"
         fontSize="12px"
         fontWeight="600"
-        color="#374151"
+        color="#373E4A"
         cursor="pointer"
         boxShadow="sm"
-        _hover={{ bg: '#f9fafb' }}
+        _hover={{ bg: '#F3F8FD' }}
         onClick={() => fitView({ padding: 0.2 })}
       >
         FIT TO VIEW
@@ -80,7 +80,7 @@ export default function CanvasToolbar() {
       {/* Load Template */}
       <Flex
         as="button"
-        bg="#1a56db"
+        bg="#2162C5"
         color="white"
         borderRadius="8px"
         px="12px"
@@ -91,7 +91,7 @@ export default function CanvasToolbar() {
         gap="6px"
         cursor="pointer"
         boxShadow="sm"
-        _hover={{ bg: '#1e40af' }}
+        _hover={{ bg: '#164C9A' }}
         border="none"
       >
         <Text>⚡</Text>

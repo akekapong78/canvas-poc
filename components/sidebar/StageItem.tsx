@@ -26,19 +26,19 @@ export default function StageItemCard({ item, isSelected }: StageItemProps) {
       align="center"
       gap="10px"
       p="10px 12px"
-      border={isSelected ? '1.5px solid #1a56db' : '1px solid #e5e7eb'}
+      border={isSelected ? '1.5px solid #2162C5' : '1px solid #E2E7EE'}
       borderRadius="8px"
       bg="white"
       cursor="grab"
       draggable
       onDragStart={onDragStart}
-      _hover={{ borderColor: '#1a56db', boxShadow: 'sm' }}
+      _hover={{ borderColor: '#2162C5', boxShadow: 'sm' }}
       userSelect="none"
     >
       <Box
         w="28px"
         h="28px"
-        bg="#eff6ff"
+        bg="#E2F1FF"
         borderRadius="6px"
         display="flex"
         alignItems="center"
@@ -49,10 +49,10 @@ export default function StageItemCard({ item, isSelected }: StageItemProps) {
         {iconMap[item.type] ?? '📋'}
       </Box>
       <Box>
-        <Text fontSize="13px" fontWeight="600" color="#111827" lineHeight="1.2">
+        <Text fontSize="13px" fontWeight="600" color="#1E252F" lineHeight="1.2">
           {item.label}
         </Text>
-        <Text fontSize="10px" color="#9ca3af" letterSpacing="0.04em">
+        <Text fontSize="10px" color="#929CAA" letterSpacing="0.04em">
           {item.sublabel}
         </Text>
       </Box>

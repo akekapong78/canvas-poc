@@ -72,7 +72,7 @@ export default function FlowCanvas({ initialNodes, initialEdges }: FlowCanvasPro
   );
 
   return (
-    <Box flex={1} position="relative" bg="#f9fafb" overflow="hidden">
+    <Box flex={1} position="relative" bg="#F0F3F9" overflow="hidden">
       <ReactFlow
         nodes={nodes}
         edges={edges}
@@ -89,11 +89,11 @@ export default function FlowCanvas({ initialNodes, initialEdges }: FlowCanvasPro
       >
         <CanvasToolbar />
         <MiniMap
-          style={{ background: '#f3f4f6', border: '1px solid #e5e7eb' }}
+          style={{ background: '#F0F3F9', border: '1px solid #E2E7EE' }}
           maskColor="rgba(0,0,0,0.05)"
         />
         <Controls showInteractive={false} />
-        <Background variant={BackgroundVariant.Dots} gap={20} size={1} color="#d1d5db" />
+        <Background variant={BackgroundVariant.Dots} gap={20} size={1} color="#D2D8DF" />
       </ReactFlow>
 
       {/* FAB */}
@@ -103,7 +103,7 @@ export default function FlowCanvas({ initialNodes, initialEdges }: FlowCanvasPro
         right="20px"
         w="44px"
         h="44px"
-        bg="#1a56db"
+        bg="#2162C5"
         borderRadius="full"
         display="flex"
         alignItems="center"
@@ -113,7 +113,7 @@ export default function FlowCanvas({ initialNodes, initialEdges }: FlowCanvasPro
         cursor="pointer"
         boxShadow="lg"
         zIndex={10}
-        _hover={{ bg: '#1e40af' }}
+        _hover={{ bg: '#164C9A' }}
       >
         +
       </Box>
