@@ -1,0 +1,118 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - img "Carbonform" [ref=e5]
+    - generic [ref=e6]:
+      - generic [ref=e7] [cursor=pointer]:
+        - img "Home" [ref=e9]
+        - paragraph [ref=e10]: Home
+      - generic [ref=e11] [cursor=pointer]:
+        - img "Dashboard" [ref=e13]
+        - paragraph [ref=e14]: Dashboard
+      - generic [ref=e15] [cursor=pointer]:
+        - img "Inventory" [ref=e17]
+        - paragraph [ref=e18]: Inventory
+      - generic [ref=e19] [cursor=pointer]:
+        - img "Life Cycle" [ref=e21]
+        - paragraph [ref=e22]: Life Cycle
+      - generic [ref=e23] [cursor=pointer]:
+        - img "Reduction Target" [ref=e25]
+        - paragraph [ref=e26]: Reduction Target
+      - generic [ref=e27] [cursor=pointer]:
+        - img "Supply Chain" [ref=e29]
+        - paragraph [ref=e30]: Supply Chain
+      - generic [ref=e31] [cursor=pointer]:
+        - img "Reports" [ref=e33]
+        - paragraph [ref=e34]: Reports
+    - generic [ref=e35]:
+      - paragraph [ref=e36]: LIFECYCLE STAGES
+      - paragraph [ref=e37]: DRAG TO CANVAS
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - generic [ref=e40]: 🌿
+          - generic [ref=e41]:
+            - paragraph [ref=e42]: Extraction
+            - paragraph [ref=e43]: RAW MATERIALS
+        - generic [ref=e44]:
+          - generic [ref=e45]: ⚙️
+          - generic [ref=e46]:
+            - paragraph [ref=e47]: Processing
+            - paragraph [ref=e48]: MANUFACTURING
+        - generic [ref=e49]:
+          - generic [ref=e50]: 📦
+          - generic [ref=e51]:
+            - paragraph [ref=e52]: Packaging
+            - paragraph [ref=e53]: SECONDARY PROCESS
+        - generic [ref=e54]:
+          - generic [ref=e55]: 🚚
+          - generic [ref=e56]:
+            - paragraph [ref=e57]: Logistics
+            - paragraph [ref=e58]: TRANSPORT
+      - generic [ref=e59]:
+        - paragraph [ref=e60]: MULTI-OUTPUT
+        - generic [ref=e61]:
+          - generic [ref=e62] [cursor=pointer]:
+            - paragraph [ref=e63]: ALLOCATION SPLIT
+            - paragraph [ref=e64]: ↗
+          - generic [ref=e65] [cursor=pointer]:
+            - paragraph [ref=e66]: BY-PRODUCT
+            - paragraph [ref=e67]: ↗
+      - generic [ref=e68]:
+        - paragraph [ref=e69]: 📍 EXPERT TIP
+        - paragraph [ref=e70]: Connect nodes by dragging from output ports (right) to input ports (left) to define carbon transfer flows.
+    - generic [ref=e71]:
+      - generic [ref=e72] [cursor=pointer]:
+        - img "Support" [ref=e74]
+        - paragraph [ref=e75]: Support
+      - generic [ref=e76] [cursor=pointer]:
+        - img "Settings" [ref=e78]
+        - paragraph [ref=e79]: Settings
+  - generic [ref=e80]:
+    - generic [ref=e81]:
+      - paragraph [ref=e82]: "Project: Carbon Lifecycle #D41243"
+      - generic [ref=e83]:
+        - paragraph [ref=e85] [cursor=pointer]: Drafts
+        - paragraph [ref=e87] [cursor=pointer]: Verified
+        - paragraph [ref=e89] [cursor=pointer]: Archives
+      - generic [ref=e90]:
+        - paragraph [ref=e91] [cursor=pointer]: 🕐
+        - paragraph [ref=e92] [cursor=pointer]: 🗺️
+        - paragraph [ref=e94] [cursor=pointer]: Undo
+        - button "Export Report" [ref=e95] [cursor=pointer]
+        - generic [ref=e96]: A
+    - generic [ref=e97]:
+      - generic [ref=e99]:
+        - paragraph [ref=e101]: "1"
+        - paragraph [ref=e102]: PARAMETERS
+      - generic [ref=e105]:
+        - paragraph [ref=e107]: "2"
+        - paragraph [ref=e108]: BUILD FLOW
+      - generic [ref=e111]:
+        - paragraph [ref=e113]: "3"
+        - paragraph [ref=e114]: ALLOCATION
+      - generic [ref=e117]:
+        - paragraph [ref=e119]: "4"
+        - paragraph [ref=e120]: REVIEW
+    - generic [ref=e121]:
+      - application [ref=e122]:
+        - generic [ref=e125]:
+          - generic [ref=e126]:
+            - button "−" [ref=e127] [cursor=pointer]
+            - paragraph [ref=e128]: 250%
+            - button "+" [ref=e129] [cursor=pointer]
+          - button "FIT TO VIEW" [ref=e130] [cursor=pointer]
+          - button "⚡ LOAD TEMPLATE" [ref=e131] [cursor=pointer]:
+            - paragraph [ref=e132]: ⚡
+            - paragraph [ref=e133]: LOAD TEMPLATE
+        - img "Mini Map" [ref=e135]
+        - generic "Control Panel" [ref=e136]:
+          - button "Zoom In" [ref=e137] [cursor=pointer]:
+            - img [ref=e138]
+          - button "Zoom Out" [ref=e140] [cursor=pointer]:
+            - img [ref=e141]
+          - button "Fit View" [ref=e143] [cursor=pointer]:
+            - img [ref=e144]
+        - img
+        - link "React Flow attribution" [ref=e147] [cursor=pointer]:
+          - /url: https://reactflow.dev
+          - text: React Flow
+      - generic [ref=e149] [cursor=pointer]: +

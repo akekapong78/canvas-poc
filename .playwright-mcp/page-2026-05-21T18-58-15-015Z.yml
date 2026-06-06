@@ -1,0 +1,193 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e3]:
+      - generic [ref=e4]:
+        - generic [ref=e5]: C
+        - generic [ref=e6]:
+          - paragraph [ref=e7]: carbon
+          - paragraph [ref=e8]: form
+      - generic [ref=e9]:
+        - generic [ref=e10] [cursor=pointer]:
+          - paragraph [ref=e11]: 🏠
+          - paragraph [ref=e12]: Home
+        - generic [ref=e13] [cursor=pointer]:
+          - paragraph [ref=e14]: 📊
+          - paragraph [ref=e15]: Dashboard
+        - generic [ref=e16] [cursor=pointer]:
+          - paragraph [ref=e17]: ☰
+          - paragraph [ref=e18]: Inventory
+        - generic [ref=e19] [cursor=pointer]:
+          - paragraph [ref=e20]: ♻️
+          - paragraph [ref=e21]: Life Cycle
+        - generic [ref=e22] [cursor=pointer]:
+          - paragraph [ref=e23]: 📈
+          - paragraph [ref=e24]: Reduction Target
+        - generic [ref=e25] [cursor=pointer]:
+          - paragraph [ref=e26]: 🔗
+          - paragraph [ref=e27]: Supply Chain
+        - generic [ref=e28] [cursor=pointer]:
+          - paragraph [ref=e29]: 📄
+          - paragraph [ref=e30]: Reports
+      - generic [ref=e31]:
+        - paragraph [ref=e32]: LIFECYCLE STAGES
+        - paragraph [ref=e33]: DRAG TO CANVAS
+        - generic [ref=e34]:
+          - generic [ref=e35]:
+            - generic [ref=e36]: 🌿
+            - generic [ref=e37]:
+              - paragraph [ref=e38]: Extraction
+              - paragraph [ref=e39]: RAW MATERIALS
+          - generic [ref=e40]:
+            - generic [ref=e41]: ⚙️
+            - generic [ref=e42]:
+              - paragraph [ref=e43]: Processing
+              - paragraph [ref=e44]: MANUFACTURING
+          - generic [ref=e45]:
+            - generic [ref=e46]: 📦
+            - generic [ref=e47]:
+              - paragraph [ref=e48]: Packaging
+              - paragraph [ref=e49]: SECONDARY PROCESS
+          - generic [ref=e50]:
+            - generic [ref=e51]: 🚚
+            - generic [ref=e52]:
+              - paragraph [ref=e53]: Logistics
+              - paragraph [ref=e54]: TRANSPORT
+        - generic [ref=e55]:
+          - paragraph [ref=e56]: MULTI-OUTPUT
+          - generic [ref=e57]:
+            - generic [ref=e58] [cursor=pointer]:
+              - paragraph [ref=e59]: ALLOCATION SPLIT
+              - paragraph [ref=e60]: ↗
+            - generic [ref=e61] [cursor=pointer]:
+              - paragraph [ref=e62]: BY-PRODUCT
+              - paragraph [ref=e63]: ↗
+        - generic [ref=e64]:
+          - paragraph [ref=e65]: 📍 EXPERT TIP
+          - paragraph [ref=e66]: Connect nodes by dragging from output ports (right) to input ports (left) to define carbon transfer flows.
+      - generic [ref=e67]:
+        - generic [ref=e68] [cursor=pointer]:
+          - paragraph [ref=e69]: 💬
+          - paragraph [ref=e70]: Support
+        - generic [ref=e71] [cursor=pointer]:
+          - paragraph [ref=e72]: ⚙️
+          - paragraph [ref=e73]: Settings
+    - generic [ref=e74]:
+      - generic [ref=e75]:
+        - paragraph [ref=e76]: "Project: Carbon Lifecycle #D41243"
+        - generic [ref=e77]:
+          - paragraph [ref=e79] [cursor=pointer]: Drafts
+          - paragraph [ref=e81] [cursor=pointer]: Verified
+          - paragraph [ref=e83] [cursor=pointer]: Archives
+        - generic [ref=e84]:
+          - paragraph [ref=e85] [cursor=pointer]: 🕐
+          - paragraph [ref=e86] [cursor=pointer]: 🗺️
+          - paragraph [ref=e88] [cursor=pointer]: Undo
+          - button "Export Report" [ref=e89] [cursor=pointer]
+          - generic [ref=e90]: A
+      - generic [ref=e91]:
+        - generic [ref=e93]:
+          - paragraph [ref=e95]: "1"
+          - paragraph [ref=e96]: PARAMETERS
+        - generic [ref=e99]:
+          - paragraph [ref=e101]: "2"
+          - paragraph [ref=e102]: BUILD FLOW
+        - generic [ref=e105]:
+          - paragraph [ref=e107]: "3"
+          - paragraph [ref=e108]: ALLOCATION
+        - generic [ref=e111]:
+          - paragraph [ref=e113]: "4"
+          - paragraph [ref=e114]: REVIEW
+      - generic [ref=e115]:
+        - application [ref=e116]:
+          - generic [ref=e118]:
+            - generic:
+              - generic:
+                - img:
+                  - group "Edge from 1 to 2" [ref=e144] [cursor=pointer]
+                - img:
+                  - group "Edge from 2 to 3" [ref=e147] [cursor=pointer]
+              - generic:
+                - group [ref=e150]:
+                  - generic [ref=e151]:
+                    - generic [ref=e152]:
+                      - generic [ref=e153]: 🌿
+                      - generic [ref=e154]:
+                        - paragraph [ref=e155]: Extraction
+                        - paragraph [ref=e156]: Raw Coconut Harvest
+                      - paragraph [ref=e157] [cursor=pointer]: ×
+                    - generic [ref=e159]:
+                      - paragraph [ref=e160]: "OUTPUT: RAW_01"
+                      - generic [ref=e161]: "12"
+                - group [ref=e163]:
+                  - generic [ref=e164]:
+                    - generic [ref=e165]:
+                      - generic [ref=e166]: 🏭
+                      - generic [ref=e167]:
+                        - paragraph [ref=e168]: Production
+                        - paragraph [ref=e169]: Pasteurization & Bottling
+                      - paragraph [ref=e170] [cursor=pointer]: ×
+                    - generic [ref=e172]:
+                      - paragraph [ref=e173]: LOAD METRIC
+                      - paragraph [ref=e174]: 82%
+                - group [ref=e179]:
+                  - generic [ref=e180]:
+                    - generic [ref=e181]:
+                      - generic [ref=e182]: 📦
+                      - generic [ref=e183]:
+                        - paragraph [ref=e184]: Packaging
+                        - paragraph [ref=e185]: Primary & Secondary
+                      - paragraph [ref=e186] [cursor=pointer]: ×
+                    - generic [ref=e188]:
+                      - generic [ref=e189]:
+                        - paragraph [ref=e190]: UNITS
+                        - paragraph [ref=e191]: 10,000
+                      - generic [ref=e192]:
+                        - paragraph [ref=e193]: KG CO2E
+                        - paragraph [ref=e194]: "0.12"
+                - group [ref=e209]:
+                  - generic [ref=e210]:
+                    - generic [ref=e211]:
+                      - generic [ref=e212]: 🌿
+                      - generic [ref=e213]:
+                        - paragraph [ref=e214]: Extraction
+                        - paragraph [ref=e215]: New Stage
+                      - paragraph [ref=e216] [cursor=pointer]: ×
+                    - generic [ref=e218]:
+                      - paragraph [ref=e219]: "OUTPUT: RAW_01"
+                      - generic [ref=e220]: "0"
+                - group [ref=e223]:
+                  - generic [ref=e224]:
+                    - generic [ref=e225]:
+                      - generic [ref=e226]: 🌿
+                      - generic [ref=e227]:
+                        - paragraph [ref=e228]: Extraction
+                        - paragraph [ref=e229]: New Stage
+                      - paragraph [ref=e230] [cursor=pointer]: ×
+                    - generic [ref=e232]:
+                      - paragraph [ref=e233]: "OUTPUT: RAW_01"
+                      - generic [ref=e234]: "0"
+          - generic [ref=e119]:
+            - generic [ref=e120]:
+              - button "−" [ref=e121] [cursor=pointer]
+              - paragraph [ref=e122]: 250%
+              - button "+" [ref=e123] [cursor=pointer]
+            - button "FIT TO VIEW" [ref=e124] [cursor=pointer]
+            - button "⚡ LOAD TEMPLATE" [ref=e125] [cursor=pointer]:
+              - paragraph [ref=e126]: ⚡
+              - paragraph [ref=e127]: LOAD TEMPLATE
+          - img "Mini Map" [ref=e129]
+          - generic "Control Panel" [ref=e130]:
+            - button "Zoom In" [ref=e131] [cursor=pointer]:
+              - img [ref=e132]
+            - button "Zoom Out" [ref=e134] [cursor=pointer]:
+              - img [ref=e135]
+            - button "Fit View" [ref=e137] [cursor=pointer]:
+              - img [ref=e138]
+          - img
+          - link "React Flow attribution" [ref=e141] [cursor=pointer]:
+            - /url: https://reactflow.dev
+            - text: React Flow
+        - generic [ref=e143] [cursor=pointer]: +
+  - button "Open Next.js Dev Tools" [ref=e204] [cursor=pointer]:
+    - img [ref=e205]
+  - alert [ref=e208]
